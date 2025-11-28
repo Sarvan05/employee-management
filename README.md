@@ -112,5 +112,6 @@ https://github.com/user-attachments/assets/1a000cf7-4139-4c83-9c58-3e5a5babf479
 
 ## EMPLOYEE VIEW
 
-https://github.com/user-attachments/assets/3df067de-b8fb-42bc-b683-ce5b823ff685
+https://github.com/user-attachments/assets/2586bedd-4c3a-4c03-8d83-5d329e623254
+
 
