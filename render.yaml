@@ -13,7 +13,7 @@ services:
         generateValue: true
 
   # Frontend Static Site
-  - type: static
+  - type: web
     name: employee-management-frontend
     env: static
     root: frontend
