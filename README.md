@@ -1,64 +1,98 @@
-# Employee Task Tracker
+# Employee Management System
 
-A fullstack application for managing employees and tasks.
+A robust, full-stack application designed to streamline employee and task management within an organization. This system features a secure, role-based environment where administrators manage the workforce and employees track their assigned tasks.
 
-## Tech Stack
-- **Frontend**: React, Vite, TailwindCSS
-- **Backend**: Node.js, Express, Sequelize, SQLite
-- **Authentication**: JWT, Role-based (Admin/Employee)
+## 🚀 Project Overview
 
-## Setup Instructions
+### 🌐 Live Demo
+**Frontend Hosted on Netlify:** [Click Here to Visit](https://6929ba602a8a2e87bcb9e105--lambent-melomakarona-011dfe.netlify.app/)
 
-### Backend
-1. Navigate to the `backend` directory:
-   ```bash
-   cd backend
-   ```
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-3. Start the server:
-   ```bash
-   npm start
-   ```
-   The server runs on `http://localhost:5000`.
-   Default Admin User: `admin@company.com` / `admin123`
+This project is an **Employee Task Tracker** built with a modern tech stack. It solves the problem of decentralized task management by providing a unified dashboard for administrators to oversee project progress and for employees to stay organized.
 
-### Frontend
-1. Navigate to the `frontend` directory:
-   ```bash
-   cd frontend
-   ```
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-3. Start the development server:
-   ```bash
-   npm run dev
-   ```
-   The app runs on `http://localhost:5173`.
+### 🔑 Key Workflow: Admin-Controlled Access
+**Security is a priority.** Unlike public applications, this system does **not** allow open registration.
+*   **Admins** are the only users who can create new employee accounts.
+*   **Employees** cannot register themselves. They must receive their login credentials (email & password) from an administrator.
+*   Once logged in, employees can view their specific tasks and update their status, but cannot access administrative features.
 
-## API Endpoints
+## ✨ Features
 
-### Auth
-- `POST /api/auth/login`: Login user
-- `POST /api/auth/register`: Register new employee (Admin only)
+### 🛡️ Admin Role
+*   **User Management**: Create and delete employee accounts.
+*   **Task Management**: Create new tasks, assign them to specific employees, and set due dates.
+*   **Dashboard**: View high-level metrics like Total Employees, Total Tasks, and Task Completion Rates.
+*   **Full Access**: View and manage all tasks across the organization.
 
-### Employees
-- `GET /api/employees`: List all employees
-- `GET /api/employees/:id`: Get employee details
-- `PUT /api/employees/:id`: Update employee (Admin only)
-- `DELETE /api/employees/:id`: Delete employee (Admin only)
+### 👤 Employee Role
+*   **Task View**: Access a personalized list of tasks assigned specifically to them.
+*   **Status Updates**: Update the status of tasks (e.g., Pending → In Progress → Completed).
+*   **Read-Only Profile**: View their own profile details (managed by Admin).
 
-### Tasks
-- `GET /api/tasks`: List tasks (Filtered by user role)
-- `POST /api/tasks`: Create task (Admin only)
-- `PUT /api/tasks/:id`: Update task
-- `DELETE /api/tasks/:id`: Delete task (Admin only)
-- `GET /api/tasks/dashboard`: Get dashboard stats
+## 🛠️ Tech Stack
 
-## Assumptions
-- SQLite is used for simplicity.
-- Admin user is created automatically on first run.
+**Frontend:**
+*   **React.js** (Vite): Fast, modern UI library.
+*   **Tailwind CSS**: Utility-first styling for a clean, responsive design.
+*   **Lucide React**: Beautiful, consistent icons.
+*   **Axios**: For API communication.
+
+**Backend:**
+*   **Node.js & Express**: Robust server-side runtime.
+*   **SQLite**: Lightweight, serverless relational database (via Sequelize ORM).
+*   **JWT (JSON Web Tokens)**: Secure, stateless authentication.
+*   **Bcrypt**: Password hashing for security.
+
+## 🚀 Getting Started
+
+### Prerequisites
+*   Node.js (v14 or higher)
+*   npm (Node Package Manager)
+
+### Installation
+
+1.  **Clone the Repository**
+    ```bash
+    git clone [https://github.com/Sarvan05/employee-management.git](https://github.com/Sarvan05/employee-management.git)
+    cd employee-management
+    ```
+
+2.  **Backend Setup**
+    ```bash
+    cd backend
+    npm install
+    npm start
+    ```
+    *The server will start on `http://localhost:5000`.*
+
+3.  **Frontend Setup** (Open a new terminal)
+    ```bash
+    cd frontend
+    npm install
+    npm run dev
+    ```
+    *The application will run on `http://localhost:5173`.*
+
+## 🔐 Default Login Credentials
+
+The system comes pre-seeded with an Admin and an Employee account for testing.
+
+| Role | Email | Password |
+| :--- | :--- | :--- |
+| **Admin** | `project.manager@gmail.com` | `Admin@123` |
+| **Employee** | `developer.one@gmail.com` | `User@123` |
+
+## 🌐 Deployment
+
+This project is configured for a split deployment:
+*   **Backend**: Hosted on **Render** (Web Service).
+*   **Frontend**: Hosted on **Netlify** (Static Site). [Visit Live Site](https://6929ba602a8a2e87bcb9e105--lambent-melomakarona-011dfe.netlify.app/)
+
+The frontend communicates with the backend via the `VITE_API_URL` environment variable.
+
+## 📸 Screenshots
+
+<!-- Add screenshots of the application here -->
+
+## 🎥 Screen Recording
+
+<!-- Add a screen recording or demo video here -->
