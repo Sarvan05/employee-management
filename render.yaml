@@ -1,0 +1,32 @@
+services:
+  # Backend Service
+  - type: web
+    name: employee-management-backend
+    env: node
+    root: backend
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: PORT
+        value: 10000
+      - key: JWT_SECRET
+        generateValue: true
+
+  # Frontend Static Site
+  - type: static
+    name: employee-management-frontend
+    env: static
+    root: frontend
+    buildCommand: npm install && npm run build
+    publish: dist
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
+    envVars:
+      - key: VITE_API_URL
+        fromService:
+          type: web
+          name: employee-management-backend
+          property: url
+        transform: (value) => value + "/api"
