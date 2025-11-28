@@ -5,7 +5,7 @@ A robust, full-stack application designed to streamline employee and task manage
 ## 🚀 Project Overview
 
 ### 🌐 Live Demo
-**Frontend Hosted on Netlify:** [Click Here to Visit](https://6929ba602a8a2e87bcb9e105--lambent-melomakarona-011dfe.netlify.app/)
+**Frontend Hosted on Netlify:** [Click Here to Visit](https://main--proyouassignment.netlify.app/)
 
 This project is an **Employee Task Tracker** built with a modern tech stack. It solves the problem of decentralized task management by providing a unified dashboard for administrators to oversee project progress and for employees to stay organized.
 
@@ -78,14 +78,14 @@ The system comes pre-seeded with an Admin and an Employee account for testing.
 
 | Role | Email | Password |
 | :--- | :--- | :--- |
-| **Admin** | `project.manager@gmail.com` | `Admin@123` |
-| **Employee** | `developer.one@gmail.com` | `User@123` |
+| **Admin** | `admin@company.com` | `admin123` |
+| **Employee** | `employee@company.com` | `employee123` |
 
 ## 🌐 Deployment
 
 This project is configured for a split deployment:
 *   **Backend**: Hosted on **Render** (Web Service).
-*   **Frontend**: Hosted on **Netlify** (Static Site). [Visit Live Site](https://6929ba602a8a2e87bcb9e105--lambent-melomakarona-011dfe.netlify.app/)
+*   **Frontend**: Hosted on **Netlify** (Static Site). [Visit Live Site](https://main--proyouassignment.netlify.app/)
 
 The frontend communicates with the backend via the `VITE_API_URL` environment variable.
 
