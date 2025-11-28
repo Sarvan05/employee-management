@@ -12,10 +12,9 @@ services:
       - key: JWT_SECRET
         generateValue: true
 
+staticSites:
   # Frontend Static Site
-  - type: web
-    name: employee-management-frontend
-    env: static
+  - name: employee-management-frontend
     root: frontend
     buildCommand: npm install && npm run build
     publish: dist
