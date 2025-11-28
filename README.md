@@ -90,6 +90,21 @@ This project is configured for a split deployment:
 The frontend communicates with the backend via the `VITE_API_URL` environment variable.
 
 ## 📸 Screenshots
+ADMIN VIEW
+<img width="1902" height="969" alt="Screenshot 2025-11-28 235552" src="https://github.com/user-attachments/assets/79cd95cb-9d56-491f-b888-3c06bb55e741" />
+<img width="1919" height="961" alt="Screenshot 2025-11-29 000224" src="https://github.com/user-attachments/assets/4be14c98-9438-46ad-acf3-10b6c8fb5ad3" />
+<img width="1904" height="976" alt="Screenshot 2025-11-29 000248" src="https://github.com/user-attachments/assets/be15e855-a3f5-4516-a345-86b3c8804d44" />
+<img width="1903" height="953" alt="Screenshot 2025-11-29 000326" src="https://github.com/user-attachments/assets/5bfed2c1-5aed-48a4-9878-be35a28a67e1" />
+
+EMPLOYEE VIEW
+<img width="1912" height="964" alt="Screenshot 2025-11-29 000911" src="https://github.com/user-attachments/assets/e449cee2-cbfb-49a2-9a70-17676d3ebae8" />
+<img width="1919" height="970" alt="Screenshot 2025-11-29 000944" src="https://github.com/user-attachments/assets/33e7bfac-c18d-414e-864b-e2b3d7b223f8" />
+
+
+
+
+
+
 
 <!-- Add screenshots of the application here -->
 
