@@ -106,8 +106,11 @@ The frontend communicates with the backend via the `VITE_API_URL` environment va
 
 ## 🎥 Screen Recording
 
+## ADMIN VIEW
+
+https://github.com/user-attachments/assets/1a000cf7-4139-4c83-9c58-3e5a5babf479
+
+## EMPLOYEE VIEW
+
 https://github.com/user-attachments/assets/3df067de-b8fb-42bc-b683-ce5b823ff685
 
-
-
-<!-- Add a screen recording or demo video here -->
